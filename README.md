@@ -76,8 +76,16 @@ Another consideration is that overall movie ratings of the genres, the research 
 
 The results are Documentary, War, Music, Action, and History. This chart was then decided to NOT be used for making recommendations because of the sacrifices of return on investment in the next section for these genres. 
 
-[Arun inserts]
+ROI:
+In order to calculate ROI we merged the Tmdb and Tn_movie_budgets csvs. After cleaning and sorting the data, the graph for the percentage average roi for each genre looks like this:
 
+![GenreROI](https://user-images.githubusercontent.com/115169255/202784027-d154b641-c35a-4bca-b06f-e44b8d288076.png)
+
+As we can see the top 5 genres are Animation, Family, Fantasy, Adventure and Romance. It's also important for us to get an idea of the distribution on the values. To visualize the distribution we used a violin plot:
+
+![GenreROIViolin](https://user-images.githubusercontent.com/115169255/202784516-5c1553c2-f568-4b73-a19f-075a7ea49e9a.png)
+
+Adventure and fantasy have wider distributions but shorter tails. Meaning that although the chances of getting an extremly high ROI in these genres is lower then say Animation, the average ROI is more consistant. This will allow Microsoft to plan budgets for their movies accordingly.  
 
 Finally, after the top directors for the two genres are identified, the research group pulled a chart to find out the best month for releasing the movies in the recommended genres - Adventure and Fantasy.
 
@@ -85,4 +93,7 @@ Finally, after the top directors for the two genres are identified, the research
 
 
 ## Conclusion
-[Arun inserts]
+We reommend Microsoft make movies in the adventure and fantasy genres. These two genres are popular and have good ROI. The list of recommended directors have a proven track record of success and should lend credibility to intial projects.
+
+## Further Considerations
+The Tmdb database has over 26,000 moives. However, the TN_budget database only has information for about 5,500 movies. This reduced the dataset sigificantly and it would be wise to have a more complete dataset. It should also be updated to the current year as market trends can change quickly. Streaming data is also missing and should be complied as it to lead to furhter insights. 
